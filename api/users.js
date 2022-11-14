@@ -8,6 +8,11 @@ usersRouter.use((req, res, next) => {
   next(); // THIS IS DIFFERENT
 });
 
+usersRouter.post('/login', async (req, res, next) => {
+  console.log(req.body);
+  res.end();
+});
+
 usersRouter.get('/', async (req, res) => {
     const users = await getAllUsers();
   
