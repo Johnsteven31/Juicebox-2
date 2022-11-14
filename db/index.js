@@ -1,6 +1,6 @@
 const { Client } = require('pg') // imports the pg module
 
-const client = new pg.Client(process.env.DB_URL || 'postgres://localhost:5432/localDBName')
+const client = new Client(process.env.DB_URL || 'postgres://localhost:5432/localDBName')
 
 /**
  * USER Methods
